@@ -90,5 +90,48 @@ En Java existen 8 tipos de datos primitivos categorizados según la naturaleza d
 | **Lógico** | `boolean` | 1 bit | `true` o `false` |
 | **Carácter** | `char` | 2 bytes | Caracteres individuales en formato Unicode (`'a'`, `'1'`) |
 
+  ### 16. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
+  Las estructuras de control dictan la secuencia de ejecución del código:
 
+* **Estructuras Condicionales:**
+  * `if / else`: Evalúa una condición booleana. Si es verdadera (`true`), ejecuta un bloque de código; si es falsa (`false`), ejecuta opcionalmente el bloque `else`.
+  * `switch`: Evalúa una variable y la compara contra múltiples casos (`case`). Permite seleccionar uno entre varios caminos de ejecución de forma más limpia que múltiples `if/else`.
 
+* **Estructuras Cíclicas (Bucles):**
+  * `for`: Ejecuta un bloque de código un número conocido de veces mediante una variable de control, condición e incremento.
+  * `while`: Repite un bloque de código **mientras** una condición booleana se mantenga verdadera. La condición se evalúa antes de cada iteración.
+  * `do-while`: Similar a `while`, pero garantiza que el bloque se ejecute **al menos una vez**, ya que la condición se evalúa al final del ciclo.
+
+  ### 17. ¿Por qué es importante usar nombres significativos para variables y métodos?
+  Usar nombres claros y descriptivos mejora radicalmente la mantenibilidad, legibilidad y calidad del software. Permite que el código sea autodocumentado, reduciendo errores lógicos y facilitando que tú u otros desarrolladores entiendan la intención del programa sin necesidad de agregar comentarios excesivos (por ejemplo, es mejor usar `calcularSalarioNeto()` que `calc()`).
+
+  ### 18. ¿Qué es la Programación Orientada a Objetos (POO)?
+  La Programación Orientada a Objetos es un paradigma de programación basado en el concepto de **objetos**, los cuales representan entidades del mundo real. Estos objetos combinan **atributos** (datos/estado) y **métodos** (comportamientos/acciones), interactuando entre sí para estructurar aplicaciones modulares y reutilizables.
+
+  ### 19. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
+  1. **Encapsulamiento:** Oculta los datos internos de un objeto protegiéndolos del acceso no autorizado y exponiendo únicamente lo necesario mediante métodos públicos (getters/setters).
+  2. **Abstracción:** Oculta la complejidad interna de los sistemas, mostrando solo las características esenciales para la interacción con el usuario o desarrollador.
+  3. **Herencia:** Permite que una clase nueva (hija) derive y reutilice atributos y métodos de una clase existente (padre).
+  4. **Polimorfismo:** Permite que objetos de diferentes clases respondan al mismo mensaje o llamado de método de formas distintas según su implementación.
+
+  ### 20. ¿Qué es la herencia en POO y cómo se utiliza en Java?
+  La herencia es un mecanismo fundamental de la Programación Orientada a Objetos que permite crear una nueva clase (clase hija o subclase) a partir de una clase existente (clase padre o superclase). Permite que la clase hija reutilice los atributos y métodos de la clase padre, promoviendo la reutilización de código y organizando las clases en una estructura jerárquica. En Java, se utiliza mediante la palabra clave **`extends`** inmediatamente después del nombre de la clase hija. Al heredar, la subclase adquiere automáticamente todos los miembros públicos y protegidos de la superclase.
+
+  ### 21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
+  Los modificadores de acceso son palabras clave que definen la visibilidad, el nivel de alcance y el grado de restricción que tienen las clases, atributos, métodos y constructores dentro de un proyecto. Su objetivo principal es aplicar el principio de encapsulamiento, regulando qué partes del programa pueden consultar o modificar los miembros de una clase.
+
+| Modificador | Nivel de Visibilidad |
+| :--- | :--- |
+| **`public`** | Accesible desde cualquier clase en cualquier paquete del proyecto sin ninguna restricción. |
+| **`protected`** | Accesible por clases del mismo paquete y por subclases (clases hijas) en otros paquetes. |
+| **`default`** *(sin palabra clave)* | Accesible únicamente por clases que se encuentran dentro del mismo paquete (*package-private*). |
+| **`private`** | Accesible únicamente dentro de la propia clase donde fue declarado; completamente oculto para el exterior. |
+
+ ### 22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+ Una variable de entorno es un valor dinámico guardado a nivel del sistema operativo que influye en el comportamiento de los procesos y aplicaciones en ejecución. En lugar de estar hardcodeada (escrita fijamente) dentro del código fuente, la aplicación consulta estas variables externas para adaptarse a su entorno.
+
+* **Importancia en la programación en general:** 
+  Permite separar la configuración del código fuente. Es fundamental para almacenar datos sensibles (claves API, credenciales de bases de datos) y configuraciones que cambian según el entorno de despliegue (desarrollo, pruebas, producción) sin modificar el código ni exponer contraseñas en repositorios como GitHub.
+
+* **Importancia específica para Java:** 
+  Son cruciales para el funcionamiento y compilación de proyectos. La variable **`JAVA_HOME`** le indica al sistema y a las herramientas de desarrollo (como Maven, Gradle o IDEs) la ruta exacta donde está instalado el Kit de Desarrollo de Java (JDK). A su vez, añadir Java a la variable **`PATH`** permite ejecutar los comandos del compilador (`javac`) y de la máquina virtual (`java`) desde cualquier terminal o consola del sistema sin importar el directorio actual.
