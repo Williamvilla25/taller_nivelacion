@@ -73,6 +73,22 @@ Los remotos son punteros con aliases que apuntan a repositorios alojados en la n
 * **`git diff`:** Muestra las diferencias línea por línea entre los archivos en tu *Working Directory*, el área de *Staging* o entre dos commits/ramas diferentes.
 * **`git show <commit_hash>`:** Detalla toda la información y los cambios específicos introducidos en un commit en particular.
 
------------------------------------------------------------------------
+----------------------------------------------------------------------
+## PROGRAMACIÓN:
 
-## Programacion
+ ### 15. ¿Cuáles son los tipos de datos primitivos en Java?
+En Java existen 8 tipos de datos primitivos categorizados según la naturaleza del valor que almacenan:
+
+| Categoría | Tipo de Dato | Tamaño | Rango / Valor por defecto |
+| :--- | :--- | :--- | :--- |
+| **Enteros** | `byte` | 1 byte | -128 a 127 |
+| | `short` | 2 bytes | -32,768 a 32,767 |
+| | `int` | 4 bytes | -2,147,483,648 a 2,147,483,647 |
+| | `long` | 8 bytes | -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 |
+| **Decimales** | `float` | 4 bytes | Números de precisión simple |
+| | `double` | 8 bytes | Números de precisión doble |
+| **Lógico** | `boolean` | 1 bit | `true` o `false` |
+| **Carácter** | `char` | 2 bytes | Caracteres individuales en formato Unicode (`'a'`, `'1'`) |
+
+
+
