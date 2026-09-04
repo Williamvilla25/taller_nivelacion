@@ -27,5 +27,6 @@ public class Operaciones {
     public float division(){
         return Numero1 / Numero2;
     }
+    
 
 }
