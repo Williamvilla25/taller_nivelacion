@@ -8,8 +8,8 @@ public class Operaciones {
     }
 
     public Operaciones(float Numero1, float Numero2){
-        Numero1 = Numero1;
-        Numero2 = Numero2;
+        this.Numero1 = Numero1;
+        this.Numero2 = Numero2;
     }
 
     public float suma(){
