@@ -7,9 +7,11 @@ public class Ejercicio3_invertida {
 
         System.out.print("Ingrese una cadena de texto: ");
         String textoIngresado = scanner.nextLine();
-        
 
+        InversorCadena inversor = new InversorCadena(textoIngresado);
+        String textoInvertido = inversor.invertir();
 
+        System.out.println("Texto invertido: " + textoInvertido);
 
     }
 }
